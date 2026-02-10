@@ -61,6 +61,12 @@ body {
 	z-index: -1;
 }
 
+.carousel-inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .picture {
 	flex: 1;
 	margin: 0 20px;
@@ -69,6 +75,7 @@ body {
 
 .picture img {
 	width: 100%;
+	height: auto;
 
 }
 #about-me {
@@ -90,9 +97,6 @@ body {
 	font-size: 14px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -175,7 +179,6 @@ body {
 	justify-content: space-between;
 	display: flex;
 	padding : 2em 0;
-
 }
 
 .service {
@@ -263,11 +266,16 @@ input[type="submit"] {
 @media all and (max-width: 1000px) {
 	#about{
 		flex-direction: column;
-
 	}
-	.picture {
+
+	#about .picture {
 		width: 50%;
 	}
+
+	#contact .picture {
+		width: 100%;
+	}
+
 	.picture.left::before {
 		width: 100%;
 		height: 30%;
