@@ -6,6 +6,12 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
+ #about-me h3 {
+	font-size: 17px;
+}
+
+
 .top-header {
 	background-color: white;
 	position: sticky;
@@ -90,7 +96,7 @@ body {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
-	width: 60%;
+	width: 40%;
 }
 #about-me p {
 	width: 80%;
@@ -151,6 +157,8 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 39px;
+	line-height: 1.2;
 
 }
 .quote__author {
@@ -258,18 +266,16 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
-		width: 100%;
+	#about-me .about-me__introduction,
+	#about-me p {
+  	width: 100%;
 	}
+
 }
 
 @media all and (max-width: 1000px) {
 	#about{
 		flex-direction: column;
-	}
-
-	#about .picture {
-		width: 50%;
 	}
 
 	#contact .picture {
