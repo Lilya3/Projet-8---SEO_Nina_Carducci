@@ -8,6 +8,20 @@
 
 	<meta name="description" content="Photographe professionnelle à Bordeaux spécialisée en mariages, portraits et événements. Devis sous 24h.">
 	
+	<!-- Open Graph (Facebook / LinkedIn / messageries) -->
+	<meta property="og:title" content="Nina Carducci - Photographe à Bordeaux">
+	<meta property="og:description" content="Photographe professionnelle à Bordeaux spécialisée en mariages, portraits et événements. Devis sous 24h.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://bouchirab.github.io/OpenClassroomsProjet4/">
+	<meta property="og:image" content="https://bouchirab.github.io/OpenClassroomsProjet4/assets/images/nina.jpg">
+	<meta property="og:locale" content="fr_FR">
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Nina Carducci - Photographe à Bordeaux">
+	<meta name="twitter:description" content="Photographe professionnelle à Bordeaux spécialisée en mariages, portraits et événements. Devis sous 24h.">
+	<meta name="twitter:image" content="https://bouchirab.github.io/OpenClassroomsProjet4/assets/images/nina.jpg">
+
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +31,75 @@
 	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "ProfessionalService",
+		"name": "Nina Carducci - Photographe",
+		"telephone": "+33 5 56 67 78 89",
+		"url": "https://bouchirab.github.io/OpenClassroomsProjet4/",
+		"image": "https://bouchirab.github.io/OpenClassroomsProjet4/assets/images/nina.jpg",
+		"description": "Nina Carducci, photographe professionnelle à Bordeaux : shooting, retouches, albums pour vos portraits et événements.",
+		"priceRange": "50-400 EUR",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"postalCode": "33200",
+			"addressLocality": "Bordeaux",
+			"addressCountry": "FR"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 44.84667300938,
+			"longitude": -0.606579976439
+		},
+		"openingHoursSpecification": [
+			{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+				"opens": "10:00",
+				"closes": "19:00"
+			}
+		],
+		"hasOfferCatalog": {
+			"@type": "OfferCatalog",
+			"name": "Services photo",
+			"itemListElement": [
+				{
+					"@type": "Offer",
+					"price": "350",
+					"priceCurrency": "EUR",
+					"description": "Shooting photo - demi-journée",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Shooting photo"
+					}
+				},
+				{
+					"@type": "Offer",
+					"price": "50",
+					"priceCurrency": "EUR",
+					"description": "Retouches photo - prix par photo",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Retouches"
+					}
+				},
+				{
+					"@type": "Offer",
+					"price": "400",
+					"priceCurrency": "EUR",
+					"description": "Album photo A4 - 30 pages recto/verso",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Album photos"
+					}
+				}
+			]
+		}
+	}
+</script>
+
 </head>
 <body>
 <header class="top-header">
