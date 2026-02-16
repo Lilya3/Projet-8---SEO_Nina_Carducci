@@ -58,6 +58,13 @@
     });
 
     $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
+    $(".gallery").on("keydown", ".nav-link", function(e) {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      $(this).trigger("click");
+    }
+});
+
     $(".gallery").on("click", ".mg-prev", () =>
       $.fn.mauGallery.methods.prevImage(options.lightboxId)
     );
@@ -220,20 +227,17 @@
     },
     showItemTags(gallery, position, tags) {
       var tagItems =
-        '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all">Tous</span></li>';
+        '<li class="nav-item"><span class="nav-link active active-tag"  data-images-toggle="all" tabindex="0" role="button">Tous</span></li>';
       $.each(tags, function(index, value) {
         tagItems += `<li class="nav-item active">
-                <span class="nav-link"  data-images-toggle="${value}">${value}</span></li>`;
+                <span class="nav-link"  data-images-toggle="${value}" tabindex="0" role="button">${value}</span>
+                </li>`;
       });
       var tagsRow = `<ul class="my-4 tags-bar nav nav-pills">${tagItems}</ul>`;
 
-      if (position === "bottom") {
-        gallery.append(tagsRow);
-      } else if (position === "top") {
-        gallery.prepend(tagsRow);
-      } else {
-        console.error(`Unknown tags position: ${position}`);
-      }
+      if (position === "bottom") gallery.append(tagsRow);
+      else if (position === "top") gallery.prepend(tagsRow);
+      else console.error(`Unknown tags position: ${position}`);
     },
     filterByTag() {
       if ($(this).hasClass("active-tag")) {
