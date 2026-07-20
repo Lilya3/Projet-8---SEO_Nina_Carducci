@@ -1,6 +1,6 @@
 # Nina Carducci
 
-Projet réalisé dans le cadre de la formation Développeur Web OpenClassrooms.
+Projet 7 réalisé dans le cadre de la formation Développeur Web OpenClassrooms.
 
 ## Aperçu
 
